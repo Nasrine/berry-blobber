@@ -52,6 +52,11 @@ var listBerries = fuction (berry){
   document.write ('<dd></dd>');
   document.write ('</dl>');
 
+  if (blueberries, grapes, redCurrant. onShrubs) {
+      document.write("true");
+    } else {
+      document.write("false");
+    }
 }
 );
 // ##########################################################
