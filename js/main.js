@@ -35,12 +35,25 @@ var redCurrant = {
 
 
 // Write your function here, name it `writeBerries`
-var listBerries = fuction (berries){
-  document.write('<h1>Fruits</h1>');
+var listBerries = fuction (berry){
+  document.write('<h1>Berries</h1>');
 
-  document.write ('<ol>')
+  berries. forEach(fuction (item){
+  document.write ('<h2>' + item.name + '</h2>');
+  document.write ('<dl>');
+  document.write ('<img src="images/' + berry.img + 'alt="">');
+  document.write ('<dt>latin</dt>');
+  document.write ('<dd></dd>');
+  document.write ('<dt>onShrub</dt>');
+  document.write ('<dd></dd>');
+  document.write ('<dt>carbs</dt>');
+  document.write ('<dd></dd>');
+  document.write ('<dt>protein</dt>');
+  document.write ('<dd></dd>');
+  document.write ('</dl>');
+
 }
-
+);
 // ##########################################################
 // START DO NOT CHANGE ZONE
 // ##########################################################
