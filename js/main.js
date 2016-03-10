@@ -33,32 +33,37 @@ var redCurrant = {
 // END DO NOT CHANGE ZONE
 // ##########################################################
 
-
 // Write your function here, name it `writeBerries`
-var listBerries = fuction (berry){
+var writeBerries = function (berries) {
   document.write('<h1>Berries</h1>');
 
-  berries. forEach(fuction (item){
-  document.write ('<h2>' + item.name + '</h2>');
-  document.write ('<dl>');
-  document.write ('<img src="images/' + berry.img + 'alt="">');
-  document.write ('<dt>latin</dt>');
-  document.write ('<dd></dd>');
-  document.write ('<dt>onShrub</dt>');
-  document.write ('<dd></dd>');
-  document.write ('<dt>carbs</dt>');
-  document.write ('<dd></dd>');
-  document.write ('<dt>protein</dt>');
-  document.write ('<dd></dd>');
-  document.write ('</dl>');
+  berries.forEach(function (item) {
+    document.write('<li>');
 
-  if (blueberries, grapes, redCurrant. onShrubs) {
-      document.write("true");
+    document.write('<h2>' + item.name + '</h2>');
+
+    document.write('<dl>');
+
+    document.write('<dt>Grows on a Shrub?</dt>');
+    document.write('<dd>'+'</dd>');
+
+    if (item.onShrub) {
+      document.write('true');
     } else {
-      document.write("false");
+      document.write('false');
     }
-}
-);
+    document.write('<dt>Energy</dt>');
+    document.write('<dd>' + item.energy + '</dd>');
+    document.write('<dt>Carbohydrates</dt>');
+    document.write('<dd>' + item.carbs + '</dd>');
+    document.write('<dt>Protein</dt>');
+    document.write('<dd>' + item.protein + '</dd>');
+    document.write('</dl>');
+
+    document.write('</li>');
+
+  });
+};
 // ##########################################################
 // START DO NOT CHANGE ZONE
 // ##########################################################
