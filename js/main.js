@@ -53,11 +53,11 @@ var writeBerries = function (berries) {
       document.write('false');
     }
     document.write('<dt>Energy</dt>');
-    document.write('<dd>' + item.energy + '</dd>');
+    document.write('<dd>' + item.energy + ' kJ</dd>');
     document.write('<dt>Carbohydrates</dt>');
-    document.write('<dd>' + item.carbs + '</dd>');
+    document.write('<dd>' + item.carbs + ' g</dd>');
     document.write('<dt>Protein</dt>');
-    document.write('<dd>' + item.protein + '</dd>');
+    document.write('<dd>' + item.protein + ' g</dd>');
     document.write('</dl>');
 
     document.write('</li>');
