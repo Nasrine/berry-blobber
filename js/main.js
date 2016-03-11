@@ -38,7 +38,6 @@ var writeBerries = function (berries) {
   document.write('<h1>Berries</h1>');
 
   berries.forEach(function (item) {
-    document.write('<li>');
 
     document.write('<h2>' + item.name + '</h2>');
 
@@ -59,8 +58,6 @@ var writeBerries = function (berries) {
     document.write('<dt>Protein</dt>');
     document.write('<dd>' + item.protein + ' g</dd>');
     document.write('</dl>');
-
-    document.write('</li>');
 
   });
 };
