@@ -44,12 +44,11 @@ var writeBerries = function (berries) {
     document.write('<dl>');
 
     document.write('<dt>Grows on a Shrub?</dt>');
-    document.write('<dd>'+'</dd>');
 
-    if (item.onShrub) {
-      document.write('true');
+     if (item.onShrub) {
+      document.write('<dd> yes </dd>');
     } else {
-      document.write('false');
+      document.write('<dd> No </dd>');
     }
     document.write('<dt>Energy</dt>');
     document.write('<dd>' + item.energy + ' kJ</dd>');
